@@ -1,16 +1,7 @@
 {
   "cleanUrls": true,
   "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/admin",
-      "dest": "/admin.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/admin", "dest": "/admin.html" }
   ]
 }
