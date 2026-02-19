@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Painel — TebasCar</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="TebasCar"><img src="images/logo.png" alt="TebasCar"/></a>
+    <nav class="navlinks">
+      <a href="index.html#estoque">Voltar ao estoque</a>
+      <a class="btn primary" href="index.html">Site</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container admin-wrap">
+  <div class="row">
+    <h2 style="margin:0">Painel de veículos</h2>
+    <span class="muted">Salvar → Exportar → substituir <span class="kbd">assets/cars.json</span></span>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <div class="body" style="display:grid;gap:10px">
+      <p id="status" class="muted" style="margin:0"></p>
+
+      <div class="controls" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+        <input id="car_id" placeholder="ID (auto)" disabled/>
+        <input id="title" placeholder="Título (ex.: Onix Premier 1.0 Turbo)" />
+        <select id="type"><option value="carro">Carro</option><option value="moto">Moto</option></select>
+        <input id="brand" placeholder="Marca (ex.: Chevrolet)" />
+
+        <input id="model" placeholder="Modelo (ex.: Onix)" />
+        <input id="year" type="number" placeholder="Ano" />
+        <input id="km" type="number" placeholder="KM" />
+        <input id="price" type="number" placeholder="Preço (apenas números)" />
+
+        <input id="city" placeholder="Cidade/UF (ex.: São Paulo, SP)" />
+        <select id="gearbox"><option>Manual</option><option>Automático</option><option>CVT</option></select>
+        <select id="fuel"><option>Flex</option><option>Gasolina</option><option>Diesel</option><option>Elétrico</option><option>Híbrido</option></select>
+        <input id="warrantyMonths" type="number" placeholder="Garantia (meses)" />
+
+        <input id="linkWhats" placeholder="Link WhatsApp (opcional)" style="grid-column:1/-1" />
+        <label style="display:flex;align-items:center;gap:8px;color:#cbd5e1">
+          <input id="certified" type="checkbox" checked style="width:auto"/> Certificado
+        </label>
+        <label style="display:flex;align-items:center;gap:8px;color:#cbd5e1">
+          <input id="sold" type="checkbox" style="width:auto"/> Vendido
+        </label>
+        <div></div><div></div>
+
+        <input id="image" placeholder="URL da imagem (link direto)" style="grid-column:1/-1"/>
+        <input id="highlights" placeholder="Destaques (vírgula) ex.: Único dono, Revisões, IPVA pago" style="grid-column:1/-1"/>
+        <input id="safety" placeholder="Segurança (vírgula) ex.: ABS, ESC, Airbags" style="grid-column:1/-1"/>
+        <textarea id="notes" placeholder="Observações (estado, histórico, etc.)" style="grid-column:1/-1;min-height:110px"></textarea>
+
+        <div style="grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <button class="btn" id="btnNew" type="button">Novo</button>
+          <button class="btn primary" id="btnSave" type="button">Salvar (rascunho)</button>
+          <button class="btn" id="btnMarkSold" type="button">Marcar como vendido</button>
+          <button class="btn" id="btnExport" type="button">Exportar cars.json</button>
+
+          <label class="btn ghost" style="cursor:pointer">
+            Importar cars.json
+            <input id="fileImport" type="file" accept="application/json" style="display:none"/>
+          </label>
+
+          <button class="btn ghost" id="btnReset" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="margin:22px 0 10px">Lista</h2>
+  <table class="table">
+    <thead><tr><th>ID</th><th>Título</th><th>Tipo</th><th>Marca</th><th>Ano</th><th>Preço</th><th>Certificado</th><th>Ações</th></tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+    <span>© <span id="y"></span> TebasCar</span>
+    <span class="muted">Dica: exporte e substitua o <span class="kbd">assets/cars.json</span> para publicar</span>
+  </div>
+</footer>
+
+<script src="assets/admin.js"></script>
+</body>
+</html>

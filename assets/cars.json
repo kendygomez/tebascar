@@ -1,0 +1,116 @@
+[
+  {
+    "id": "v1",
+    "type": "carro",
+    "title": "Chevrolet Onix Premier 1.0 Turbo",
+    "brand": "Chevrolet",
+    "model": "Onix",
+    "year": 2023,
+    "km": 14000,
+    "price": 106900,
+    "city": "São Paulo, SP",
+    "gearbox": "Automático",
+    "fuel": "Flex",
+    "warrantyMonths": 24,
+    "certified": true,
+    "sold": false,
+    "image": "https://images.unsplash.com/photo-1515923162043-5f4cabe95bfe?q=80&w=1600&auto=format&fit=crop",
+    "highlights": [
+      "6 airbags",
+      "ESC",
+      "Revisões em dia"
+    ],
+    "notes": "Único dono, manual e chave reserva.",
+    "safety": [
+      "ABS",
+      "ESC",
+      "6 airbags"
+    ],
+    "linkWhats": "https://wa.me/5500000000000?text=Olá!%20Quero%20mais%20informações%20sobre%20o%20Onix%20Premier%202023."
+  },
+  {
+    "id": "v2",
+    "type": "carro",
+    "title": "Toyota Corolla XEi 2.0",
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2021,
+    "km": 32000,
+    "price": 119900,
+    "city": "São Paulo, SP",
+    "gearbox": "Automático",
+    "fuel": "Flex",
+    "warrantyMonths": 12,
+    "certified": true,
+    "sold": false,
+    "image": "https://images.unsplash.com/photo-1590362891991-f776e747a588?q=80&w=1600&auto=format&fit=crop",
+    "highlights": [
+      "Histórico verificado",
+      "2ª chave",
+      "Excelente procedência"
+    ],
+    "notes": "Revisões em dia. Documentação ok.",
+    "safety": [
+      "ABS",
+      "Airbag",
+      "ESP"
+    ],
+    "linkWhats": "https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20no%20Corolla%202021."
+  },
+  {
+    "id": "v3",
+    "type": "carro",
+    "title": "Volkswagen T-Cross Comfortline 1.0 TSI",
+    "brand": "Volkswagen",
+    "model": "T-Cross",
+    "year": 2022,
+    "km": 27000,
+    "price": 124900,
+    "city": "São Paulo, SP",
+    "gearbox": "Automático",
+    "fuel": "Flex",
+    "warrantyMonths": 12,
+    "certified": true,
+    "sold": false,
+    "image": "https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop",
+    "highlights": [
+      "Multimídia",
+      "Câmera de ré",
+      "Pneus novos"
+    ],
+    "notes": "Excelente estado, revisões em dia.",
+    "safety": [
+      "ABS",
+      "ESC",
+      "Airbags"
+    ],
+    "linkWhats": "https://wa.me/5500000000000?text=Olá!%20Quero%20informações%20sobre%20o%20T-Cross%202022."
+  },
+  {
+    "id": "v4",
+    "type": "moto",
+    "title": "Honda CG 160 Fan",
+    "brand": "Honda",
+    "model": "CG 160 Fan",
+    "year": 2022,
+    "km": 18000,
+    "price": 14900,
+    "city": "São Paulo, SP",
+    "gearbox": "Manual",
+    "fuel": "Gasolina",
+    "warrantyMonths": 6,
+    "certified": true,
+    "sold": false,
+    "image": "https://images.unsplash.com/photo-1524592714635-3e79bfe3d6bf?q=80&w=1600&auto=format&fit=crop",
+    "highlights": [
+      "Laudo aprovado",
+      "Econômica",
+      "Documento ok"
+    ],
+    "notes": "Moto bem cuidada, pronta para transferir.",
+    "safety": [
+      "Freio dianteiro a disco"
+    ],
+    "linkWhats": "https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20na%20CG%20160%20Fan%202022."
+  }
+]
